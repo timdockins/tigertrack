@@ -1,0 +1,39 @@
+Arguments: 
+  /Users/timdockins/.nvm/versions/node/v12.4.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add express --save
+
+PATH: 
+  /Users/timdockins/Downloads/google-cloud-sdk/bin:/usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/Users/timdockins/.nvm/versions/node/v12.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/timdockins/WebstormProjects/tigertrack/node_modules/.bin:/Users/timdockins/Q-MAP/code/scripts:/Users/timdockins/Q-MAP/code/qmap_3:/Users/timdockins/Library/Python/2.7/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/timdockins/WebstormProjects/tigertrack/package.json: Unexpected token } in JSON at position 227
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "TigerTrack",
+    "version": "0.0.0",
+    "description": "Alpha for TigerTrack - a simple activity tracking application",
+    "main": "index.js",
+    "author": "timdockins@gmail.com",
+    "license": "MIT",
+    "private": true,
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
