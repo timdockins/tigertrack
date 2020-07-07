@@ -8,12 +8,12 @@
   "private": true,
   "scripts": {
     "start": "lessc ./less/tigertrack.less ./public/css/tigertrack.css & node index.js",
-    "less": "lessc ./less/tigertrack.less ./public/css/tigertrack.css",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "less": "lessc ./less/tigertrack.less ./public/css/tigertrack.css"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "less": "^3.11.3"
   }
 }
