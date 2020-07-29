@@ -2,41 +2,55 @@
 # yarn lockfile v1
 
 
-"@uirouter/core@6.0.5":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-6.0.5.tgz#60f13fd530fc75daa283e2bece944516559d066b"
-  integrity sha512-WN2HyELsxvqLaCMYCWojGW/QLRBgFBfwyERp5jC3Vn1njo/FLI5hplVqWMu6LIGp6Hpz3pbdtSaiFb1iY7iTVw==
+"@uirouter/core@6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-6.0.6.tgz#4bea0ca88790a939d8e84ba05a31b96f50d9abe8"
+  integrity sha512-+i1iNaPQRp1JoEnxi4EsTX30bSvkWtPEenENWdvdIzX615Q3WCWwnbW9DtrwX9gSD5qmWEaQEtGMU0uF3qJ+1g==
 
-angular-bootstrap@~0.12.2:
+angular-animate@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/angular-animate/-/angular-animate-1.8.0.tgz#fc6333a5a052129dc5fa0b02cd676304d2b99e9d"
+  integrity sha512-ROFK3UIn1MSVpqAlay15ZxjPmVbvwaO3Zn/2vhmQdYeqxSbUVuOckcvtDLBpHPGPtOAreu35qfV7NQ7u2EgDcA==
+
+angular-bootstrap@^0.12.2:
   version "0.12.2"
   resolved "https://registry.yarnpkg.com/angular-bootstrap/-/angular-bootstrap-0.12.2.tgz#de9900a7db087a7e9da47304a9c2f77f9c069827"
   integrity sha1-3pkAp9sIen6dpHMEqcL3f5wGmCc=
 
-angular-filter@~0.5.17:
+angular-filter@^0.5.17:
   version "0.5.17"
   resolved "https://registry.yarnpkg.com/angular-filter/-/angular-filter-0.5.17.tgz#60c0c7380fd45872cb8f10801cfe07e154062935"
   integrity sha1-YMDHOA/UWHLLjxCAHP4H4VQGKTU=
   dependencies:
     angular "*"
 
-angular-loader@~1.8.0:
+angular-loader@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/angular-loader/-/angular-loader-1.8.0.tgz#63bbe97b44ca141fbc4fbde899904a81ed648c65"
   integrity sha512-NCvLLFWCkxLR3/zBaVGM+7q9IJzobx2PVXMnPoKjtAITpM6AhnH5SYFkFzcK1oQ6P6c2v0oLef6oij7mSEj0Mw==
 
-angular-mocks@~1.8.0:
+angular-mocks@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.8.0.tgz#9d161fe2102e47e46ff78a4226e4dfec27c060c4"
   integrity sha512-oFKJIqR6zcsW6V9UQMuUYCXIcTy+n7oYExXxZkvU57hwJQdU1nuNZcSMQA9URiEAPyo7v3bqm0eOP3Ezi7Bigg==
 
-angular-moment@~1.3.0:
+angular-moment@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/angular-moment/-/angular-moment-1.3.0.tgz#f501f66b6fcc832d8d36f8905cc7a93123ab2af0"
   integrity sha512-KG8rvO9MoaBLwtGnxTeUveSyNtrL+RNgGl1zqWN36+HDCCVGk2DGWOzqKWB6o+eTTbO3Opn4hupWKIElc8XETA==
   dependencies:
     moment ">=2.8.0 <3.0.0"
 
-angular-resource@~1.8.0:
+angular-nvd3@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/angular-nvd3/-/angular-nvd3-1.0.9.tgz#8d8a71487d9e5a122e8a5d0f5cd26ab0e491a6f5"
+  integrity sha1-jYpxSH2eWhIuil0PXNJqsOSRpvU=
+  dependencies:
+    angular "^1.x"
+    d3 "^3.3"
+    nvd3 "^1.7.1"
+
+angular-resource@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.8.0.tgz#578ef122e7cb7bcc6c0ad6c2451dc3d27fd570ba"
   integrity sha512-9woUq3kDwoT7R6SjKX8vaJMhOplYBm9sqRAxKgDhDIdPyA8iBowqQIusf9+8Q+z/HlXb8ZXvKspJyKXrxmKdvg==
@@ -53,14 +67,14 @@ angular-ui-router@^0.3.1:
   dependencies:
     angular "^1.0.8"
 
-angular-ui-router@~1.0.26:
-  version "1.0.26"
-  resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-1.0.26.tgz#b11e3f6290eda7eb6ff38009aee975d6e800bafa"
-  integrity sha512-jg5nohfbfSujxdQXcAWZCYG3R1xG9OSlUwa/wsEGGZ06met5rkZopcysc4dq0tcCZToL8CxwBgLyqldTvbXfjw==
+angular-ui-router@^1.0.27:
+  version "1.0.27"
+  resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-1.0.27.tgz#998c14068dab5d9420016b7e0899ab2b74239c20"
+  integrity sha512-Y2I1Z0knCpYWs5T4WSCucSf2PfAEx+2ANGZmBX8ZZKo5KVtSUb0YpfeTQRHz9XAPr9Y7bBcQox1H3dOQS7ouEQ==
   dependencies:
-    "@uirouter/core" "6.0.5"
+    "@uirouter/core" "6.0.6"
 
-angular@*, angular@^1.0.8, angular@~1.8.0:
+angular@*, angular@^1.0.8, angular@^1.x:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.8.0.tgz#b1ec179887869215cab6dfd0df2e42caa65b1b51"
   integrity sha512-VdaMx+Qk0Skla7B5gw77a8hzlcOakwF8mjlW13DpIWIDlfqwAbSSLfd8N/qZnzEmQF4jC4iofInd3gE7vL8ZZg==
@@ -69,6 +83,11 @@ angular@1.5.8:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.5.8.tgz#925a5392b8c212d09572dc446db7e01264e094cb"
   integrity sha1-klpTkrjCEtCVctxEbbfgEmTglMs=
+
+angularjs@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/angularjs/-/angularjs-0.0.1.tgz#496f50c7141515e741ea976de891def0838b3f19"
+  integrity sha1-SW9QxxQVFedB6pdt6JHe8IOLPxk=
 
 bootstrap@3.3.7:
   version "3.3.7"
@@ -80,22 +99,27 @@ bootstrap@^4.5.0:
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.5.0.tgz#97d9dbcb5a8972f8722c9962483543b907d9b9ec"
   integrity sha512-Z93QoXvodoVslA+PWNdk23Hze4RBYIkpb5h8I2HY2Tu2h7A0LpAgLcyrhrSUyo2/Oxm2l1fRZPs1e5hnxnliXA==
 
-font-awesome@~4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
-  integrity sha1-j6jPBBGhoxr9B7BtKQK7n8gVoTM=
+d3@^3.3:
+  version "3.5.17"
+  resolved "https://registry.yarnpkg.com/d3/-/d3-3.5.17.tgz#bc46748004378b21a360c9fc7cf5231790762fb8"
+  integrity sha1-vEZ0gAQ3iyGjYMn8fPUjF5B2L7g=
+
+html5-boilerplate@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/html5-boilerplate/-/html5-boilerplate-8.0.0.tgz#59ea54c2bcfb7453061d23e021fe8736bbb42200"
+  integrity sha512-Z4P0XB9R9idkVcmPjiiNPlQwiuy7j87oN58vemqIhk2YpGGmN3gc8WSxQRlGg/n1Mep7saQ5c2ROfAdfWf+ZJQ==
 
 "moment@>=2.8.0 <3.0.0":
   version "2.27.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
   integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
 
-oauth-ng@~0.4.2:
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/oauth-ng/-/oauth-ng-0.4.10.tgz#afab235cc0866a5e57ea52034465640b4d97fb6c"
-  integrity sha1-r6sjXMCGal5X6lIDRGVkC02X+2w=
+nvd3@^1.7.1:
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/nvd3/-/nvd3-1.8.6.tgz#2d3eba74bf33363b5101ebf1d093c59a53ae73c4"
+  integrity sha1-LT66dL8zNjtRAevx0JPFmlOuc8Q=
 
-ui-navbar@~0.5.2:
+ui-navbar@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/ui-navbar/-/ui-navbar-0.5.2.tgz#e1d8dbbb7a34dd31930fa55d215ae2eb51a042b0"
   integrity sha1-4djbu3o03TGTD6VdIVri61GgQrA=

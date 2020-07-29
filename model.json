@@ -1,0 +1,37 @@
+[{
+  "uuid" : "....",
+  "type" : "TEAM",
+  "lead" : "ObjectIdForUser",
+  "activities" : [
+    {
+      "activityId" : -1,
+      "name" : "Proposals",
+      "helpText" : "Number of proposals made this week"
+    },
+    {
+      "activityId" : -2,
+      "name" : "Emails",
+      "helpText" : "Number of emails sent this week"
+    }
+  ],
+  "members" : [
+    "ObjectId",
+    "ObjectId",
+    "ObjectId"
+  ]
+},
+  {
+    "uuid" : "....",
+    "type" : "USER",
+    "email" : "joe.t.user@userville.org",
+    "password" : "hashed password",
+    "lastLogin" : "DateTime",
+    "activities" : [
+      {
+        "activityId" : -2,
+        "value" : 2,
+        "dateEntered" : "date"
+      }
+    ]
+  }
+]

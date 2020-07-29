@@ -4,56 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>TigerTrack 0.0</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css/tigertrack.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
-<nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">
-        Tiger Track
-    </a>
-    <form class="form-inline">
-        <button class="btn btn-primary" type="submit"><i class="glyphicon-plus-sign"></i></button>
-    </form>
-</nav>
-<div class="container-fluid" id="main-content">
-    <div class="row">
-        <div class="col-sm-12">
-            <form>
-                <div class="form-group">
-                    <label class="tiger-activity-label" for="dateInput">Date</label>
-                    <input type="date" class="form-control" id="dateInput" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                    <label class="tiger-activity-label" for="activityInput1">Emails</label>
-                    <input inputmode="numeric"
-                           pattern="[0-9]*"
-                           type="number" class="form-control" id="activityInput1" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                    <label class="tiger-activity-label" for="activityInput2">Phone Calls</label>
-                    <input inputmode="numeric"
-                           pattern="[0-9]*"
-                           type="number" class="form-control" id="activityInput2" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                    <label class="tiger-activity-label" for="activityInput3">Text Messages</label>
-                    <input inputmode="numeric"
-                           pattern="[0-9]*"
-                           type="number" class="form-control" id="activityInput3" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                    <label class="tiger-activity-label" for="activityInput4">Proposals</label>
-                    <input inputmode="numeric"
-                           pattern="[0-9]*"
-                           type="number" class="form-control" id="activityInput4" aria-describedby="emailHelp">
-                </div>
-                <button type="submit" class="form-control btn btn-primary">Submit</button>
+<body ng-app="tigertrack">
+<div ng-controller="NavigationCtrl">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="#">Tiger Track</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="track" ui-sref-active="active">Track</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="team" ui-sref-active="active">Team</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Username" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
             </form>
         </div>
-    </div>
+    </nav>
 </div>
+<div class="container-fluid">
+    <div ui-view></div>
+</div>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-resource/angular-resource.min.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="node_modules/angular-filter/dist/angular-filter.min.js"></script>
+
+<script src="node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<!--<script src="node_modules/ngstorage/ngStorage.min.js"></script>-->
+<!--<script src="node_modules/oauth-ng/dist/oauth-ng.js"></script>-->
+<script src="node_modules/ui-navbar/release/js/ui-navbar.min.js"></script>
+
+<script src="node_modules/moment/moment.js"></script>
+<script src="node_modules/angular-moment/angular-moment.js"></script>
+
+<!--
+<script src="lib/d3/d3.min.js"></script>
+<script src="lib/nvd3/build/nv.d3.min.js"></script>
+<script src="lib/angular-nvd3/dist/angular-nvd3.min.js"></script>
+-->
+
+
+<!--<script src="bower_components/datatables/media/js/dataTables.bootstrap.min.js"></script>-->
+
+<script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+<div class="sidamo-welcome">
+    <div class="jumbotron jumbotron-sidamo">
+        <h1>Top Shops</h1>
+        <p>Who's got the most votes?</p>
+    </div>
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-sidamo" data-ng-repeat="shop in vm.shops | orderBy : '-votes'">
+                <h1>{{ shop.name }}<br><small>{{ shop.location }}</small></h1>
+                <h3># of votes : {{ shop.votes }}</h3>
+            </li>
+        </ul>
+    </div>
+</div>

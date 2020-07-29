@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-sm-12">
+        <form>
+            <div class="form-group">
+                <label class="tiger-activity-label" for="dateInput">Date</label>
+                <input type="date" class="form-control" ng-model="vm.entryDate" id="dateInput" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group" data-ng-repeat="activity in vm.activityTemplates">
+                <label class="tiger-activity-label" for="{{activity.name}}">{{activity.label}}</label>
+                <input inputmode="numeric"
+                       pattern="[0-9]*"
+                       ng-model="activity.value"
+                       type="number" class="form-control" id="{{activity.name}}" aria-describedby="{{activity.description}}">
+            </div>
+            <button type="submit" class="form-control btn btn-primary" ng-click="vm.submit()">Submit</button>
+        </form>
+    </div>
+</div>
